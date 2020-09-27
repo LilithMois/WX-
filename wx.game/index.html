@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web game</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+<body>
+<canvas id="game_canvas" ></canvas>
+<script type="module" src="game.js"></script>
+<script>
+    var canvas = document.querySelector("canvas");
+    var context = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+</script>
+</body>
+</html>
